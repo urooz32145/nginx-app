@@ -2,11 +2,11 @@ name: Build and Publish Docker Image
 
 on:
   push:
-    branches: [ main ]  # Change this if you want to trigger on a different branch
+    branches: [ main ]
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted  # <-- changed from ubuntu-latest
 
     steps:
       - name: Checkout source code
