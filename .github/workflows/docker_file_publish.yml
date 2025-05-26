@@ -26,4 +26,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: urooz3/nginx-app:v1.3
+          tags: urooz3/nginx-app:${{ github.sha }}
